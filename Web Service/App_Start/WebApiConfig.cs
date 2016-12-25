@@ -10,7 +10,6 @@ namespace Web_Service
     {
         public static void Register(HttpConfiguration config)
         {
-            var cors = new EnableCorsAttribute("http://testclientapp.apphb.com", "*", "*");
             config.EnableCors(cors);
 
             //config.EnableCors(new EnableCorsAttribute("http://localhost:1188", "*", "*"));
